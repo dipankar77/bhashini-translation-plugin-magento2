@@ -1,0 +1,13 @@
+{
+    "name": "bhashini/magento2-translation-plugin",
+    "description": "Bhashini Translation Plugin integration for Magento 2 (v3)",
+    "type": "magento2-module",
+    "license": "MIT",
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "Bhashini\\Translation\\": ""
+        }
+    },
+    "version": "1.0.0"
+}

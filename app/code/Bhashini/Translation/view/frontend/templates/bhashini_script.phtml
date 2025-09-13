@@ -1,0 +1,25 @@
+<?php
+/**
+ * Template that renders the BHASHINI container and injects the official plugin script.
+ * If you want to change widget position or add attributes, edit this file.
+ */
+?>
+
+<div class="bhashini-plugin-container"></div>
+<script>
+(function() {
+    // Ensure the container exists before loading the external script.
+    function loadScript() {
+        var script = document.createElement('script');
+        script.src = 'https://translation-plugin.bhashini.co.in/v3/website_translation_utility.js';
+        script.async = true;
+        document.body.appendChild(script);
+    }
+
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        loadScript();
+    } else {
+        document.addEventListener('DOMContentLoaded', loadScript);
+    }
+})();
+</script>
